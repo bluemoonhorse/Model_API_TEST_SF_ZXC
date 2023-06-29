@@ -3,7 +3,7 @@ import requests
 from pydantic import ValidationError
 from serializers.booking_model import BookingResponseModel, CreateBookingRequest, BookingResponse
 
-
+# все нужное: айди заказа, ожидаемый статус, заголовок json.
 @pytest.mark.without_token
 @pytest.mark.parametrize('booking_id, expected_status, headers', [
     (1, 200, {"Accept": "application/json"}),  # Valid booking_id and header, positive test

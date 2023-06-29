@@ -3,7 +3,7 @@ import requests
 from api.api import auth_token, create_booking
 
 
-
+# все нужное: токен, создаем ордер, контент тайп и статус.
 @pytest.mark.xfail
 @pytest.mark.required_token
 @pytest.mark.parametrize(

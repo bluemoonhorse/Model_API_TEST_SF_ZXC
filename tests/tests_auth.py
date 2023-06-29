@@ -4,7 +4,7 @@ from pydantic import ValidationError
 from serializers.auth_model import AuthRequestModel
 
 
-# token tests
+# авторизация: логин, пароль, заголовки - все нужное.
 
 @pytest.mark.auth
 @pytest.mark.parametrize('username, password, headers', [
